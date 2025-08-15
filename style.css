@@ -1,391 +1,395 @@
-
-body{
-    background-image: url(images/background.png);
-    width: 1440;
-    height: 3473;
-    top: -1089px;
-    left: 3841px;
-    border-width: 1px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #4f4f4f;
+  color: #1e1e1e;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+#green {
+  background-color: #4a8b70;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 20px;
+  border-radius: 24px;
+}
+
+header div {
+  padding: 20px;
+  border-radius: 10px;
+  height: 143px;
+  font-size: 1rem;
+  color: #444;
+  background: #fff;
+}
+
+header h1 {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 16px;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+}
+
+header p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a4a4a;
+  margin: 0 auto;
+}
+
+.profile-section {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 3px #dadada;
+}
+
+.Proficiency-parent {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Proficiency {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #dadada;
+}
+.Skills {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Proficiency h1,
+.Skills h1 {
+  margin-bottom: 15px;
+}
+
+.Proficiency h4 {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.ProficiencyBars p {
+  margin: 8px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/*Fix some stuff */
+.levels {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.proficiency-level {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.skill-bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #d3d3d3;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.skill-fill {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #396b5e;
+}
+
+.skill-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Skills-section span {
+  display: inline-block;
+  background-color: #edf2f7;
+  color: #333;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin: 5px;
+  font-size: 0.85rem;
+}
+
+.Projects-parent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.Projects-parent h1 {
+  margin-bottom: 20px;
+}
+
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.Projects > div {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.Projects h6 {
+  font-size: 1.1rem;
+  color: #1a202c;
+  margin: 10px 0;
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Education {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 39.5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Tools {
+  width: 30%;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+}
+
+
+
+.Tools div{
+  display: flex;
+  flex-direction: column;
+  gap : 10%;
+  padding: 10%;
+}
+
+.Tools .img1 {
+  height: 200px;
+  width: 150px;
+}
+
+.Tools .img2 {
+  height: 140px;
+  width: 150px;
+}
+
+.Tools .img3 {
+  height: 155px;
+  width: 150px;
+}
+
+.Education h2,
+.Tools h2 {
+  margin-bottom: 15px;
+}
+
+.Education-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  background-color: #e7f0ec;
+  border-radius: 12px;
+  margin-top: 15px;
+  gap: 15px;
+  height: 160px;
+  width: 540px;
+  box-shadow: 0 0 2px #dadada;
+  font-size: small;
+  padding: 12px 10px 0 10px;
+}
+
+#Education-green-card {
+  background-color: #2e6e5b;
+  color: #ffffff;
+}
+
+.Education-card ul,
+.Education-green-card ul {
+  list-style: disc;
+  padding-left: 8px;
+}
+
+.Education-card li {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.Experience {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Experience h2 {
+  margin-bottom: 10px;
+}
+
+.Experience-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #e7f0ec;
+  border-radius: 10px;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+footer {
+  background-color: #ef4444;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer .Yeah p {
+  display: inline;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 376px) {
+  header h1 {
+    font-size: 0.5rem;
+  }
+
+  header p {
+    font-size: 0.4rem;
+  }
+
+  .profile-section {
+    overflow: scroll;
+  }
+
+  .Proficiency-parent {
     display: flex;
-    max-width: 1321px;
-    max-height:  300.1px;
-    top: 63px;
-    left: 59px;
-    border-radius: 29.04px;
-    gap: 27px;
-    margin-bottom: 40px;
+    flex-direction: column;
+  }
 
-    img{
-        width: 300.1px;
-        height: 300.1px;
-        top: 63px;
-        left: 59px;
-        border-radius: 29.04px;
-    }
-    div{
-        background-color: #FFFFFF;
-        width: 994.69px;
-        height: 180.1px;
-        top: 63px;
-        left: 386.1px;
-        border-radius: 29.04px;
-        padding-top: 59px;
-        padding-right: 69px;
-        padding-bottom: 59px;
-        padding-left: 69px;
-        gap: 10px;
-
-    }
-}
-.Proficiency-parent{
-    display: flex;
-    justify-content: space-around;
-}
-.Proficiency{
-    width: 563px;
-    height: 340px;
-    top: 411.43px;
-    left: 62.92px;
-    border-radius: 29.04px;
-    padding-top: 41px;
-    padding-right: 28px;
-    padding-bottom: 41px;
-    padding-left: 28px;
-    gap: 10px;
-    background-color: #FFFFFF;
-    border-radius: 29.04px;
-    margin-bottom: 3%;
-    p{
-        font-weight: bold;
-    }
-}
-
-.ProficiencyBars{
+  .Projects {
     display: grid;
-    grid-template-columns: 1fr, 2fr ;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-    
-    .js{
-        grid-row: 1/4;
-        grid-column: 1/2;
-    }
-    #Javascript-bar{
-        width: 15em;
-        height: 15px;
-        background-color: #4A8B70; 
-        grid-row: 1/4;
-        grid-column: 2/2;
-    }
-    .react-bar{
-        grid-row: 2/4;
-        grid-column: 1/2;
-    }
-    #react-bar{
-        width: 1em;
-        height: 15px;
-        background-color: #4A8B70;
-        grid-row: 2/4;
-        grid-column: 2/2;   
-    }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-    .nodeJs-bar{
-        grid-row: 3/4;
-        grid-column: 1/2;   
-    }
-    #nodeJs-bar{
-        width: 8em;
-        height: 15px;
-        background-color: #4A8B70;
-        grid-row: 3/4;
-        grid-column: 2/2; 
-    }
-    .html-css-bar{
-        grid-row: 4/4;
-        grid-column: 1/2;
-    }
-    #html-css-bar{
-        width: 9em;
-        height: 15px;
-        background-color: #4A8B70;
-        grid-row: 4/4;
-        grid-column: 2/2;
-    }
-}
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4 {
+    font-size: 0.5rem;
+  }
 
-.Skills{
-    background-color: #FFFFFF;
-    width: 516px;
-    height: 365px;
-    top: 411px;
-    left: 675px;
-    border-radius: 29.04px;
-    padding: 28px;    
-    span{
-        background-color: #4A8B7021;
-        border-radius: 29.4px;
-        padding: 5px;
-        gap: 39px;
-        margin: 10px;
-    }
-}
-.Skills-section{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   span{
-    padding: 15px;
-   }
-}
-
-.Projects-parent{
-    
-    width: 994px;
-    height: 847px;
-    top: 1691.09px;
-    left: 63px;
-    gap: 10px;
-    border-radius: 29.04px;
-    padding: 29px;
-    background-color: #FFFFFF;
-    margin-bottom: 2%;
-}
-
-.Projects{
-    display: flex;
-    width: 280;
-    height: 581;
-    top: 130.05px;
-    left: 33.54px;
-    border-radius: 29.04px;
-    padding-top: 22px;
-    padding-right: 19px;
-    padding-bottom: 22px;
-    padding-left: 19px;
-    
-
-}
-
-.project-1{
-    background-color: #4A8B70;
-    width: 280;
-    height: 581;
-    top: 130.05px;
-    left: 33.54px;
-    gap: 154px;
-    border-radius: 29.04px;
-    padding-top: 22px;
-    padding-right: 19px;
-    padding-bottom: 22px;
-    padding-left: 19px;
-    margin-left: 10px;
-}
-
-.project-2,
-.project-3,
-.project-4{
-    background-color: #E7F0EC;
-    width: 280;
-    height: 581;
-    top: 130.05px;
-    left: 33.54px;
-    gap: 154px;
-    border-radius: 29.04px;
-    padding-top: 22px;
-    padding-right: 19px;
-    padding-bottom: 22px;
-    padding-left: 19px;
-    margin-left: 10px;
-}
-
-.section2{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 2%;
-    img{
-        width: 184px;
-    }
-}
-
-.Education{
-    background-color: #FFFFFF;
-    width: 994px;
-    height: 789px;
-    top: 1691.09px;
-    left: 63px;
-    gap: 10px;
-    border-radius: 29.04px; 
-    padding: 29px;
-    gap: 10px;
-}
-.Education-green-card{
-    background-color: #4A8B70;
-    width: auto;
-    height: auto;
-    border-radius: 28px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.Education-card{
-    background-color: #4A8B7021;
-    width: auto;
-    height: auto;
-    border-radius: 28px;
-    padding: 10px;
-}
-
-.Tools{
+  .Education {
+    width: 95%;
+    font-size: smaller;
+  }
+  .Education ul {
     text-align: center;
-    background-color: #FFFFFF;
-    width: 300px;
-    height: 847px;
-    top: 1691.29px;
-    left: 1078.69px;
-    border-radius: 29.04px;
+  }
+  .Education li {
+    font-size: 0.3rem;
+  }
+  .Education-card {
+    font-size: 0.5rem;
+    width: 100%;
+  }
+  .Tools div {
+    display: flex;
+  }
+  
+  .Tools .img1{
+    height: 10%;
+    width: 10%;
+  }
+
+  .Tools .img2{
+    height: 10% ;
+    width: 10%;
+  }
+
+  .Tools .img3{
+    height: 10%;
+    width: 10%;
+  }
+
+  .Tools .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .Experience-card li{
+    font-size: 0.7rem;
+  }
+  .Education-card h2{
+    font-size: smaller;
+  }
+  .Experience-card p{
+    font-size: 0.5rem;
+  }
 
 }
-.Experience{
-    background-color: #FFFFFF;
-    width: 1180px;
-    height: 300px;
-    top: 2586.15px;
-    left: 63px;
-    gap: 30px;
-    border-radius: 29.04px;
-    padding-top: 31px;
-    padding-right: 27px;
-    padding-bottom: 32px;
-    padding-left: 27px;
-    margin-bottom: 2%;
-}
-
-footer{
-    background-color: #D76239;
-    width: 1322;
-    height: 158;
-    top: 3274.15px;
-    left: 59px;
-    justify-content: space-between;
-    border-radius: 29.04px;
-    padding: 29.04px;
-
-    .Yeah{
-        display: flex;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,153 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="WhatsApp Image 2025-05-25 at 04.35.32_53958a32.jpg" alt="">
-        <div>I'm a student interested in software development. I'm excited to learn and grow in this field. I have a basic understanding of programming and enjoy solving problems</div>
+      <img src="WhatsApp Image 2025-05-25 at 04.35.32_53958a32.jpg" alt="" />
+      <div class="profile-section">
+        <h1>Theodore Ntolo</h1>
+        <p>
+          I'm a student interested in software development. I'm excited to learn
+          and grow in this field. I have a basic understanding of programming
+          and enjoy solving problems
+        </p>
+      </div>
     </header>
-    <section class="Proficiency-parent" >
-        <div class="Proficiency">
-            <h1>Profiency</h1>
-            <h4>Beginner</h4>
-            <div class="ProficiencyBars">
-                <p class="js-bar" >Javascript</p><p id="Javascript-bar" ></p>
-                <p class="react-bar" >React</p><p id="react-bar" ></p>
-                <p class="html-css-bar" >HTML + CSS</p><p id="html-css-bar"></p>
-            </div>
+    <section class="Proficiency-parent">
+      <div class="Proficiency">
+        <h1>Profiency</h1>
+        <div class="levels">
+          <h4>Beginner</h4>
+          <h4>Intermediate</h4>
+          <h4>Advanced</h4>
         </div>
-        <div class="Skills" >
-            <h1>Skills</h1>
-            <div class="Skills-section">
-                <span >Software Development</span>
-                <span>Problem Solving</span>
-                <span>Git And Version Control</span>
-                <span>Web Development</span>
-                <span>Team Collaboration</span>
-                <span>Functional Programming</span>
-        
+        <div class="ProficiencyBars">
+          <div class="proficiency-level">
+            <div class="skill-label">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 70%"></div>
             </div>
+          </div>
+
+          <div class="proficiency-level">
+            <div class="skill-label">React</div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-level">
+            <div class="skill-label">HTML + CSS</div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="Skills">
+        <h1>Skills</h1>
+        <div class="Skills-section">
+          <span>Software Development</span>
+          <span>Problem Solving</span>
+          <span>Git And Version Control</span>
+          <span>Web Development</span>
+          <span>Team Collaboration</span>
+          <span>Functional Programming</span>
+        </div>
+      </div>
     </section>
 
-    <div class="Projects-parent" >
-        <h1>Projects</h1>
-        <div class="Projects" >
-            <div class="project-1">
-                <p>2025</p>
-                <h6>Crypto Tracker App</h6>
-                <b>Brief:</b>
-                <p>A mobile app that tracks cryptocurrency prices and trends in real-time, providing users with valuable insights to make informed investment decisions.</p>
-                <b>Technologies:</b>
-                <p>React.js, APIs (CoinGecko), Redux</p>
-                <b>Responsibilities:</b>
-                <p>Designed and developed the app's UI, integrated APIs for real-time data, implemented state management using Redux.</p>
-            </div>
-
-
-
-            <div class="project-2">
-                <p>2024</p>
-                <h6>Movie Finder App</h6>
-                <b>Brief:</b>
-                <p>A web app that allows users to search and discover new movies, view ratings, and read reviews. The app aims to provide a seamless movie-browsing experience.</p>
-                <b>Technologies:</b>
-                <p>React.js, The Movie Database (TMDb) API, CSS</p>
-                <b>Responsibilities:</b>
-                <p>Built the app's frontend, integrated TMDb API for movie data, styled the UI with CSS.</p>
-            </div>
-
-            <div class="project-3">
-                <p>2023</p>
-                <h6>Basic Calculator App</h6>
-                <b>Brief:</b>
-                <p>A simple calculator app that performs basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
-                <b>Technologies:</b>
-                <p>JavaScript, HTML, CSS</p>
-                <b>Responsibilities:</b>
-                <p>Developed the calculator's logic using JavaScript, designed the UI with HTML and CSS.</p>
-            </div>
-
-
-            <div class="project-4">
-                <p>2024</p>
-                <h6>ChatApp</h6>
-                <b>Brief:</b>
-                <p>A simplified version of WhatsApp, allowing users to send and receive messages in real-time. The app focuses on basic messaging functionality.</p>
-                <b>Technologies:</b>
-                <p>Firebase, React.js, CSS</p>
-                <b>Responsibilities:</b>
-                <p>Set up Firebase for real-time messaging, built the chat interface with React.js, styled the app with CSS.</p>
-            </div>
-        
+    <div class="Projects-parent">
+      <h1>Projects</h1>
+      <div class="Projects">
+        <div class="project-1" id="green">
+          <p>2025</p>
+          <h6>Crypto Tracker App</h6>
+          <b>Brief:</b>
+          <p>
+            A mobile app that tracks cryptocurrency prices and trends in
+            real-time, providing users with valuable insights to make informed
+            investment decisions.
+          </p>
+          <b>Technologies:</b>
+          <p>React.js, APIs (CoinGecko), Redux</p>
+          <b>Responsibilities:</b>
+          <p>
+            Designed and developed the app's UI, integrated APIs for real-time
+            data, implemented state management using Redux.
+          </p>
         </div>
+
+        <div class="project-2">
+          <p>2024</p>
+          <h6>Movie Finder App</h6>
+          <b>Brief:</b>
+          <p>
+            A web app that allows users to search and discover new movies, view
+            ratings, and read reviews. The app aims to provide a seamless
+            movie-browsing experience.
+          </p>
+          <b>Technologies:</b>
+          <p>React.js, The Movie Database (TMDb) API, CSS, Firebase</p>
+          <b>Responsibilities:</b>
+          <p>
+            Built the app's frontend, integrated TMDb API for movie data, styled
+            the UI with CSS.
+          </p>
+        </div>
+
+        <div class="project-3">
+          <p>2023</p>
+          <h6>Basic Calculator App</h6>
+          <b>Brief:</b>
+          <p>
+            A simple calculator app that performs basic arithmetic operations
+            like addition, subtraction, multiplication, and division.
+          </p>
+          <b>Technologies:</b>
+          <p>JavaScript, HTML, CSS</p>
+          <b>Responsibilities:</b>
+          <p>
+            Developed the calculator's logic using JavaScript, designed the UI
+            with HTML and CSS.
+          </p>
+        </div>
+
+        <div class="project-4">
+          <p>2024</p>
+          <h6>ChatApp</h6>
+          <b>Brief:</b>
+          <p>
+            A simplified version of WhatsApp, allowing users to send and receive
+            messages in real-time. The app focuses on basic messaging
+            functionality.
+          </p>
+          <b>Technologies:</b>
+          <p>Firebase, React.js, CSS</p>
+          <b>Responsibilities:</b>
+          <p>
+            Set up Firebase for real-time messaging, built the chat interface
+            with React.js, styled the app with CSS.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="section2">
-        <div class="Education" >
-            <h2>Education</h2>
-            <div style="display: flex;  " class="Education-green-card" >
-                <div>
-                    <p>Mar 2025 - Mar.2026</p>
-                    <b>CodeSpace Academy</b>
-                    <p>Coding</p>
-                </div>
-                <ul>
-                    <li>Main forcus is to become a web developer who uses React.js , Javascript as well as html and css.</li>
-                    <li>At Code_space I learnt how to approach complex problems and break them down into manageable parts.</li>
-                    <li>Code space provides real world projects which prepares me to handle real word problems.</li>
-                </ul>
-            </div>
-
-            <div style="display: flex;" class="Education-card">
-                <div>
-                    <p>2018 - 2022</p>
-                    <b>ABC High School</b>
-                    <p>Student</p>
-                </div>
-                <ul>
-                    <li>Focused on advanced subjects like computer science, mathematics, and physics.</li>
-                    <li>Developed strong research and analytical skills.</li>
-                    <li>Participated in extracurricular activities like robotics club and coding competitions.</li>
-                </ul>
-            </div>
-
+      <div class="Education">
+        <h2>Education</h2>
+        <div id="Education-green-card" class="Education-card">
+          <div>
+            <p>Mar 2025 - Mar.2026</p>
+            <b>CodeSpace Academy</b>
+            <p>Coding</p>
+          </div>
+          <ul>
+            <li>
+              Main forcus is to become a web developer who uses React.js ,
+              Javascript as well as html and css.
+            </li>
+            <li>
+              At Code_space I learnt how to approach complex problems and break
+              them down into manageable parts.
+            </li>
+            <li>
+              Code space provides real world projects which prepares me to
+              handle real word problems.
+            </li>
+          </ul>
         </div>
-                        
-        <div class="Tools">
-            <h2 >Tools</h2>
-            <div>
-                <img src="images/Frame 1@2x.png" alt="">
-            </div>
+
+        <div class="Education-card">
+          <div>
+            <p>2020 - 2024</p>
+            <b>Heathfiled High School</b>
+            <p>Student</p>
+          </div>
+          <ul>
+            <li>
+              Focused on advanced subjects like computer science, mathematics,
+              and physics.
+            </li>
+            <li>Developed strong research and analytical skills.</li>
+            <li>
+              Participated in extracurricular activities like robotics club and
+              coding competitions.
+            </li>
+          </ul>
         </div>
+
+        <div class="Education-card">
+          <div>
+            <p></p>
+            <b>Thomas wild schuut Primary School</b>
+            <p>Student</p>
+          </div>
+          <ul>
+            <li>
+              Learned basic subjects like reading, writing, and mathematics.
+            </li>
+            <li>
+              Developed foundational skills in science, social studies, and
+              arts.
+            </li>
+            <li>
+              Participated in group activities, sports, and school events.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Tools">
+      
+        <div>
+          <h2>Tools</h2>
+          <img src="images/content@2x.png" alt="" class="img1" />
+          <img src="images/content@3x.png" alt="" class="img2" />
+          <img src="images/content.png" alt="" class="img3" />
+        </div>
+      </div>
     </div>
- 
 
     <div class="Experience">
-        <h2>Experience</h2>
+      <h2>Experience</h2>
+      <div class="Experience-card" id="green">
         <div>
-            <h2>Make Matcha</h2>
-            <p>I make matcha with water and the muatch depending on the flavour I'll use salt as well</p>
-            <p>I can do lattte art</p>
+          <p>Jan 2025 - Oct 2025</p>
+          <b>NiceToMatcha</b>
+          <p>Bar man | full time</p>
         </div>
+        <ul>
+          <li>I make matcha by mixing the green tea powder with water.</li>
+          <li>I adjust the amount of water to get the taste just right.</li>
+          <li>I also add a bit of salt to bring out the flavor.</li>
+        </ul>
+      </div>
+      <div class="Experience-card">
+        <div>
+          <p>June 2023 - Dec 2023</p>
+          <b>Sunrise Bistro</b>
+          <p>Waiter | Part-Time</p>
+        </div>
+        <ul>
+          <li>Greeted customers and took their orders promptly.</li>
+          <li>
+            Provided excellent customer service to ensure a positive dining
+            experience.
+          </li>
+          <li>
+            Brought food and drinks to tables and handled customer inquiries.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <footer>
-        <h2>Lets chat</h2>
-        <div class="Yeah">
-            <p>theodorentolo6@gmail.com |</p>
-            <p>0680446090 |</p>
-            <p>Linkdin |</p>
-            <p>GitHub </p>
-        </div>
-      
+      <h2>Lets chat</h2>
+      <div class="Yeah">
+        <p>theodorentolo6@gmail.com |</p>
+        <p>0680446090 |</p>
+        <p>Linkdin |</p>
+        <p>GitHub</p>
+      </div>
     </footer>
-    
-    
-</body>
+  </body>
 </html>
